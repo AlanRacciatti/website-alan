@@ -12,7 +12,7 @@ body {
 
 .main-header {
   background-color: #EAC926;
-  padding: 20px;
+  padding-top: 20px;
   width: 100vw;
 }
 
@@ -60,6 +60,7 @@ body {
   text-align: center;
   font-size: 18px;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .home-banner {
@@ -132,6 +133,7 @@ main {
 }
 
 .precio {
+  color: black;
   font-size: 18px;
   margin-left: 10px;
 }
@@ -154,6 +156,10 @@ main {
 .lista-oferta-precio {
   display: flex;
   margin: auto;
+}
+
+.anchor-article {
+  text-decoration: none;
 }
 
 .main-footer {
