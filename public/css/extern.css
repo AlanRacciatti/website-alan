@@ -1,0 +1,23 @@
+.fg--search {
+    background: #EAC926;
+    position: relative;
+  }
+  
+  .fg--search input {
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: solid white 1px
+  }
+  
+  .fg--search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    padding: 9px 10px;
+  }
+  

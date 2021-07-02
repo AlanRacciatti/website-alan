@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'roboto', sans-serif, helvetica;
+  font-size: 12px;
+  background-color: #ebebeb;
+}
+
+.main-header {
+  background-color: #EAC926;
+  padding: 20px;
+  width: 100vw;
+}
+
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 50%;
+}
+
+.search-bar {
+  width: 50%;
+  align-self: center;
+}
+
+
+.logo-and-search-bar {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+}
+
+.copy-header {
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  align-self: center;
+}
+
+.cuotas-interes {
+  margin: 15px 0;
+}
+
+.hamburguer-button {
+  background-color: #0042A0;
+  color: #FFFFFF;
+  display: block;
+  max-width: 45px;
+  padding: 10px;
+  border-radius: 6.5px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+}
+
+.home-banner {
+  display: flex;
+  width: 100vw;
+}
+
+.main-navbar {
+  display: none;
+}
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+main {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.seccion-articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.titular {
+  margin: 30px 0 30px 10px;
+  font-size: 24px;
+  color: #666;
+  text-align: left;
+}
+
+.articulo {
+  margin-bottom: 10px;
+  width: 300px;
+  margin: auto
+}
+
+.imagen-articulo {
+  width: 300px;
+}
+
+.info-product {
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 15px;
+}
+
+.truck-logo {
+  color: green;
+  border: solid 1px green;
+  border-radius: 50%;
+  padding: 5px;
+  float: right;
+  margin: 3px 3px 0 0;
+}
+
+.precio {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.oferta {
+  font-size: 16px;
+  align-self: center;
+  color: #39b54a;
+  margin-left: 5px;
+}
+
+.descripcion {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.lista-oferta-precio {
+  display: flex;
+  margin: auto;
+}
+
+.main-footer {
+  text-align: center;
+  display: block;
+  margin: 10px 0px ;
+  background-color: white;
+  width: 100%;
+  padding: 35px;
+}
+
+.footer-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0042A0;
+}
+
+.footer-text {
+  color: #666;
+}
+
+.copyright-info {
+  text-align: left;
+}
+
+@media (min-width: 361px) {
+
+  .copy-header {
+    max-width: 350px;
+    text-align: right;
+  }
+
+  .articulo {
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+  }
+
+
+  .hamburguer-button {
+    display: none;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header ul {
+    display: flex;
+  }
+
+  .main-header li {
+    margin: 0 5px;
+  }
+
+  
+  .main-navbar {
+    margin-top: 25px;
+  }
+
+}
+
+@media (min-width: 769px) {
+  .logo {
+    width: 250px;
+  }
+
+  .main-header-top-bar, .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+  }  
+
+  .main-header-top-bar {
+    align-items: center;
+  }
+
+  .copy-header {
+    margin: 0;
+    max-width: none;
+    font-size: 18px;
+  }
+
+  .main-navbar li {
+    margin: 0 10px;
+  }
+
+  .main-navbar a {
+    font-size: 19px;
+  }
+
+  
+  .main-navbar {
+    margin-top: 30px;
+  }
+
+  .articulo {
+    flex-shrink: 0.5;
+  }
+
+}
