@@ -7,11 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado liebre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bd2ba961f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/extern.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/8bd2ba961f.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -21,7 +24,7 @@
 
         <div class="main-header-top-bar">
 
-            <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></a>
             <form class="form-group fg--search search-bar">
                 <input type="text" class="input" placeholder="Buscar productos, marcas">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -44,8 +47,8 @@
             <ul class="left-navbar">
 
                 <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas oficiales</a></li>
-                <li><a href="#">Vender</a></li>
+                <li class="none-tablet"><a href="#">Tiendas oficiales</a></li>
+                <li class="none-tablet"><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
 
             </ul>
@@ -62,15 +65,16 @@
     
     </header>
     
-    
-    <main>
+    <main class="home-main">
         
         <h2 class="titular">Basado en tu última visita</h2>
 
         <section class="seccion-articulos">
 
 
-            <article class="articulo">
+           <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-cafetera-moulinex.jpg'/>
 
@@ -97,9 +101,13 @@
 
                 </div>
 
+            </a>
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-macbook-pro-2019.jpg'/>
 
@@ -126,9 +134,13 @@
 
                 </div>
 
+            </a>
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-samsung-galaxy-s10.jpg'/>
 
@@ -155,9 +167,13 @@
 
                 </div>
 
+            </a>
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-tv-samsung-smart.jpg'/>
 
@@ -184,7 +200,11 @@
 
                 </div>
 
+            </a>
+
             </article>
+
+        
 
         </section>
 
@@ -195,6 +215,8 @@
             
             <article class="articulo">
 
+            <a href="#">
+
                 <img class="imagen-articulo" src='/img/img-cafetera-moulinex.jpg'/>
 
                 <div class="info-product">
@@ -220,9 +242,13 @@
 
                 </div>
 
+            </a>
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-macbook-pro-2019.jpg'/>
 
@@ -249,9 +275,13 @@
 
                 </div>
 
+            </a>
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-samsung-galaxy-s10.jpg'/>
 
@@ -277,9 +307,13 @@
 
                 </div>
 
+            </a>    
+
             </article>
 
             <article class="articulo">
+
+            <a href="#">
 
                 <img class="imagen-articulo" src='/img/img-tv-samsung-smart.jpg'/>
 
@@ -306,6 +340,8 @@
 
                 </div>
 
+            </a>
+
             </article>
 
         </section>
@@ -314,29 +350,33 @@
 
     <footer class="main-footer">
 
-        <section>
+        <div class="footer-info">
 
-            <i class="fas fa-credit-card footer-icon"></i>
-            <h3 class="footer-text">Pagá con tarjeta o efectivo</h3>
-            <p class="footer-text">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            <section>
 
-        </section>
+                <i class="fas fa-credit-card footer-icon"></i>
+                <h3 class="footer-text">Pagá con tarjeta o efectivo</h3>
+                <p class="footer-text">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
 
-        <section>
+            </section>
 
-            <i class="fas fa-gift footer-icon"></i>
-            <h3 class="footer-text">Envío gratis desde los $2.500</h3>
-            <p class="footer-text">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            <section>
 
-        </section>
+                <i class="fas fa-gift footer-icon"></i>
+                <h3 class="footer-text">Envío gratis desde los $2.500</h3>
+                <p class="footer-text">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
 
-        <section>
+            </section>
 
-            <i class="fas fa-user-shield footer-icon"></i>
-            <h3 class="footer-text">Seguridad, de principio a fin</h3>
-            <p class="footer-text">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            <section>
 
-        </section>
+                <i class="fas fa-user-shield footer-icon"></i>
+                <h3 class="footer-text">Seguridad, de principio a fin</h3>
+                <p class="footer-text">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+
+            </section>
+
+        </div>
 
         <section>
 

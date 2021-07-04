@@ -10,10 +10,11 @@ body {
   background-color: #ebebeb;
 }
 
+/* Header */
+
 .main-header {
   background-color: #EAC926;
   padding-top: 20px;
-  width: 100vw;
 }
 
 .main-header-top-bar {
@@ -23,7 +24,8 @@ body {
 }
 
 .logo {
-  width: 50%;
+  width: 90%;
+  margin-bottom: 10px;
 }
 
 .search-bar {
@@ -64,9 +66,12 @@ body {
 }
 
 .home-banner {
-  display: flex;
-  width: 100vw;
+  width: 100%;
 }
+
+/* Fin del header */
+
+/* Home */
 
 .main-navbar {
   display: none;
@@ -86,7 +91,7 @@ body {
   font-size: 17px;
 }
 
-main {
+.home-main {
   width: 90%;
   text-align: center;
   margin: auto;
@@ -108,9 +113,9 @@ main {
 }
 
 .articulo {
-  margin-bottom: 10px;
   width: 300px;
-  margin: auto
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .imagen-articulo {
@@ -132,6 +137,26 @@ main {
   margin: 3px 3px 0 0;
 }
 
+.articulo a .truck-logo {
+  animation: out 2s;
+}
+
+.articulo a:hover .truck-logo {
+  animation: in 1s;
+}
+
+@keyframes in {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes out {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .precio {
   color: black;
   font-size: 18px;
@@ -151,6 +176,11 @@ main {
   color: #666;
   margin-left: 10px;
   text-align: left;
+  visibility: hidden;
+}
+
+.articulo a:hover .descripcion{
+  visibility: visible;
 }
 
 .lista-oferta-precio {
@@ -160,6 +190,76 @@ main {
 
 .anchor-article {
   text-decoration: none;
+}
+
+/* Fin del home */
+
+/* Formularios (login register) */
+
+a:hover {
+  text-decoration: none;
+}
+
+.register-main {
+  margin: auto;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 500px;
+  border: #000000 solid 1px;
+  background-color: #EAC926;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  margin: auto;
+  border: 1px solid #000000;
+  max-width: 400px;
+}
+
+form .mb-3 {
+  align-self: stretch;
+  margin: 0 10%;
+}
+
+.container-user-type {
+  display: flex;
+  justify-content: center;
+}
+
+.container-user-type .form-check {
+  margin: 0 10px
+}
+
+.register-check-box {
+  text-align: center;
+}
+
+.form-label {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn {
+  border: 1px solid black
+}
+
+.login-submit-btn:hover {
+  background-color: #0022AA;
+  border: 1px solid black
+}
+
+/* Fin de los formularios */
+
+/* Footer */
+
+h3.footer-text {
+  font-size: 20px;
 }
 
 .main-footer {
@@ -177,6 +277,10 @@ main {
   color: #0042A0;
 }
 
+.footer-icon:hover {
+  color: #EAC926;
+}
+
 .footer-text {
   color: #666;
 }
@@ -185,14 +289,26 @@ main {
   text-align: left;
 }
 
+/* Fin del footer */
+
 @media (min-width: 361px) {
+
+  /* Header */
 
   .copy-header {
     max-width: 350px;
     text-align: right;
   }
 
-  .articulo {
+  .none-tablet {
+    display: none;
+  }
+
+  /* Fin del header */
+
+  /* Main */
+
+  .articulo:hover {
     box-shadow: 0 0 10px rgb(100, 100, 100);
   }
 
@@ -219,11 +335,20 @@ main {
     margin-top: 25px;
   }
 
+  /* Fin del home */
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+
+  /* Home */
+
   .logo {
     width: 250px;
+  }
+
+  .none-tablet {
+    display: block;
   }
 
   .main-header-top-bar, .main-navbar {
@@ -257,5 +382,15 @@ main {
   .articulo {
     flex-shrink: 0.5;
   }
+
+  /* Fin del home */
+
+  /* Footer */
+
+    .footer-info {
+      display: flex;
+    }
+
+  /* Fin del footer */
 
 }
