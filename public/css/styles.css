@@ -328,8 +328,15 @@ h3.footer-text {
     text-align: right;
   }
 
-  .none-tablet {
-    display: none;
+  .main-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-navbar,
+  .right-navbar {
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   /* Fin del header */
@@ -368,6 +375,19 @@ h3.footer-text {
 }
 
 @media (min-width: 768px) {
+
+  /* Header */
+
+  .main-navbar {
+    flex-direction: row;
+  }
+
+  .left-navbar,
+  .right-navbar {
+    width: auto;
+  }
+
+  /* Fin del header */
 
   /* Home */
 
