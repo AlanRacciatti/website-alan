@@ -7,8 +7,8 @@ app.use(express.static(path.join(__dirname, './public')));
 
 app.use(express.static(path.join(__dirname, './views')));
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Listening port 3000');
+app.listen(process.env.PORT || 3001, () => {
+  console.log('Listening port 3001');
 });
 
 app.get('/', (req, res) => {

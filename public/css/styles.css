@@ -23,8 +23,12 @@ body {
   justify-content: space-evenly;
 }
 
+.anchor-logo {
+  display: flex;
+}
+
 .logo {
-  width: 90%;
+  width: 40%;
   margin-bottom: 10px;
 }
 
@@ -138,7 +142,7 @@ body {
 }
 
 .articulo {
-  width: 300px;
+  width: 220px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -163,11 +167,11 @@ body {
 }
 
 .articulo a .truck-logo {
-  animation: out 2s;
+  animation: out .3s;
 }
 
 .articulo a:hover .truck-logo {
-  animation: in 1s;
+  animation: in .2s;
 }
 
 @keyframes in {
@@ -290,7 +294,7 @@ h3.footer-text {
   text-align: center;
   display: block;
   margin: 10px 0px ;
-  background-color: white;
+  background-color: #ebebeb;
   width: 100%;
   padding: 35px;
 }
@@ -299,10 +303,6 @@ h3.footer-text {
   font-size: 2em;
   margin-bottom: 10px;
   color: #0042A0;
-}
-
-.footer-icon:hover {
-  color: #EAC926;
 }
 
 .footer-text {
@@ -315,11 +315,12 @@ h3.footer-text {
 
 .copyright-info {
   text-align: left;
+  margin-left: 10px;
 }
 
 /* Fin del footer */
 
-@media (min-width: 361px) {
+@media (min-width: 480px) {
 
   /* Header */
 
@@ -342,10 +343,18 @@ h3.footer-text {
   .horizontal-rule-navbar {
     display: none;
   }
+  
+  .logo {
+    width: 60%;
+  }
 
   /* Fin del header */
 
   /* Main */
+
+  .articulo {
+    width: 250px;
+  }
 
   .articulo:hover {
     box-shadow: 0 0 10px rgb(100, 100, 100);
@@ -403,14 +412,10 @@ h3.footer-text {
     display: block;
   }
 
-  .main-header-top-bar, .main-navbar {
+  .main-header-top-bar, .main-navbar, .main-footer {
     max-width: 1200px;
     margin: auto;
   }  
-
-  .main-header-top-bar {
-    align-items: center;
-  }
 
   .copy-header {
     margin: 0;
@@ -433,6 +438,7 @@ h3.footer-text {
 
   .articulo {
     flex-shrink: 0.5;
+    width: 300px;
   }
 
   .descripcion {
